@@ -1,0 +1,125 @@
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  --Font: "Poppins", "sans-serif";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--Font);
+}
+
+.c {
+  border: solid 1px greenyellow;
+}
+
+html {
+  background-color: var(--Red);
+  background-image: url(./images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr;
+  color: white;
+}
+
+.main-info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-info h1 {
+  margin-top: 64px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  max-width: 320px;
+}
+
+.main-info h2 {
+  margin-top: 32px;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  max-width: 320px;
+}
+
+.form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.form--banner {
+  max-width: 320px;
+  background-color: var(--Blue);
+  margin-top: 32px;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 20px 32px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.24);
+}
+
+.form--container form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  min-width: 320px;
+  width: 320px;
+  padding: 10px 24px 24px 24px;
+  border-radius: 8px;
+  background-color: white;
+  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.24);
+}
+
+.form--container form input {
+  min-height: 52px;
+  margin-top: 16px;
+  border-radius: 4px;
+  border: solid 1px gainsboro;
+  outline: none;
+  padding: 8px;
+}
+
+.form--container form input::placeholder {
+  font-weight: 600;
+}
+
+.form--container form button {
+  min-height: 52px;
+  margin-top: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--Green);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.terms {
+  max-width: 320px;
+  color: var(--Grayish-Blue);
+  font-size: 0.6rem;
+  padding: 0 32px;
+}
+
+.terms p {
+  margin-top: 12px;
+  text-align: center;
+}
