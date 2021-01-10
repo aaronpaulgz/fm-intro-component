@@ -14,46 +14,46 @@ let $btn = document.getElementById("btn");
 
 const checkName = () => {
   if ($name.value === "") {
-    $name.insertAdjacentHTML("afterend", "<p>First name cannot be empty</p>");
     $name.style.border = "solid 1px var(--Red)";
     $errorName.style.visibility = "visible";
+    $errorName.nextElementSibling.style.visibility = "visible";
   } else {
-    $name.nextElementSibling.remove();
     $name.style.border = "";
     $errorName.style.visibility = "hidden";
+    $errorName.nextElementSibling.style = "";
   }
 };
 const checkLastName = () => {
   if ($lastName.value === "") {
-    $lastName.insertAdjacentHTML(
-      "afterend",
-      "<p>Last name cannot be empty</p>"
-    );
     $lastName.style.border = "solid 1px var(--Red)";
     $errorLastName.style.visibility = "visible";
+    $errorLastName.nextElementSibling.style.visibility = "visible";
   } else {
+    $lastName.style.border = "";
+    $errorLastName.style.visibility = "hidden";
+    $errorLastName.nextElementSibling.style = "";
   }
 };
 const checkMail = () => {
   if ($mail.value === "") {
-    $mail.insertAdjacentHTML(
-      "afterend",
-      "<p>Looks like this is not an email</p>"
-    );
     $mail.style.border = "solid 1px var(--Red)";
     $errorMail.style.visibility = "visible";
+    $errorMail.nextElementSibling.style.visibility = "visible";
   } else {
+    $mail.style.border = "";
+    $errorMail.style.visibility = "hidden";
+    $errorMail.nextElementSibling.style = "";
   }
 };
 const checkPass = () => {
   if ($password.value === "") {
-    $password.insertAdjacentHTML(
-      "afterend",
-      "<p>Looks like this is not an email</p>"
-    );
     $password.style.border = "solid 1px var(--Red)";
     $errorPass.style.visibility = "visible";
+    $errorPass.nextElementSibling.style.visibility = "visible";
   } else {
+    $password.style.border = "";
+    $errorPass.style.visibility = "hidden";
+    $errorPass.nextElementSibling.style = "";
   }
 };
 
