@@ -34,9 +34,14 @@
           <div class="form--banner">
             <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
           </div>
-          <form onsubmit="event.preventDefault()" action="">
+          <form onsubmit="event.preventDefault()" action="./index.html">
             <div class="input--container">
-              <input id="name" placeholder="First Name" type="text" />
+              <input
+                id="name"
+                placeholder="First Name"
+                type="text"
+                aria-label="name"
+              />
               <div class="error" id="errorName">
                 <img src="./images/icon-error.svg" alt="" />
               </div>
@@ -48,6 +53,7 @@
                 class="required"
                 placeholder="Last Name"
                 type="text"
+                aria-label="last-name"
               />
               <div class="error" id="errorLastName">
                 <img src="./images/icon-error.svg" alt="" />
@@ -60,6 +66,7 @@
                 class="required"
                 placeholder="Email Address"
                 type="text"
+                aria-label="mail"
               />
               <div class="error" id="errorMail">
                 <img src="./images/icon-error.svg" alt="" />
@@ -72,6 +79,7 @@
                 class="required"
                 placeholder="Password"
                 type="password"
+                aria-label="password"
               />
               <div class="error" id="errorPass">
                 <img src="./images/icon-error.svg" alt="" />
